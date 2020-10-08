@@ -5,11 +5,23 @@ const expect = chai.expect;
 describe("Triangular tests", () => {
   it("returns invalid for negative input", () => {
     expect(findTriangleType(-1, -2, -3)).to.be.equal(
-      "Cannot enter negative or zero values"
+      "Invalid input, please enter valid input"
     );
   });
   it("returns invalid for zero input", () => {
-    expect(findTriangleType()).to.be.equal("Enter input values");
+    expect(findTriangleType(0, 0, 0)).to.be.equal(
+      "Invalid input, please enter valid input"
+    );
+  });
+  it("returns invalid for undefined input", () => {
+    expect(findTriangleType(" ")).to.be.equal(
+      "Invalid input, please enter valid input"
+    );
+  });
+  it("returns invalid for undefined input", () => {
+    expect(findTriangleType(null)).to.be.equal(
+      "Invalid input, please enter valid input"
+    );
   });
   it("returns not a triangle", () => {
     expect(findTriangleType(2, 5, 1)).to.be.equal("Cannot form a triangle");
