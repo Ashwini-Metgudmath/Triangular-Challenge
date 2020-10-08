@@ -18,7 +18,7 @@ describe("Triangular tests", () => {
       "Invalid input, please enter valid input"
     );
   });
-  it("returns invalid for undefined input", () => {
+  it("returns invalid for null input", () => {
     expect(findTriangleType(null)).to.be.equal(
       "Invalid input, please enter valid input"
     );
