@@ -1,0 +1,23 @@
+{
+  "name": "triangular-challenge",
+  "version": "1.0.0",
+  "description": "Determine the type of a triangle by taking the lengths of the triangle's three sides as input",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha './tests/*.test.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashwini-Metgudmath/Triangular-Challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashwini-Metgudmath/Triangular-Challenge/issues"
+  },
+  "homepage": "https://github.com/Ashwini-Metgudmath/Triangular-Challenge#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.3"
+  }
+}
